@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <style>
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+        .success {
+            background: green;
+        }
+        .error {
+            background: red;
+        }
+    </style>
+    <title>Shopping List</title>
+</head>
+<body>
+  <div class="container">
+        <h1>Add Items</h1>
+            <form id="shopping-form" action="#">
+                <div>
+                    <label for="item">Item</label>
+                    <input type="text" id="item" class="u-full-width">
+                </div> 
+
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" class="u-full-width">
+                </div>
+
+                <div>
+                    <label for="price">Price (&#8358;)</label>
+                    <input type="number" id="price" class="u-full-width">
+                </div>
+
+                <div>
+                    <input type="submit" value="Add Item" class="u-full-width">
+                </div>
+            </form>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price (&#8358;)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="shopping-list"></tbody>
+            </table>
+  </div>
+  <script src="appes6.js"></script>  
+</body>
+</html>
